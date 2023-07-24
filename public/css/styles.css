@@ -1,0 +1,231 @@
+body,
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  background-color: #246076;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h3 {
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+  justify-content: center;
+  position: relative;
+}
+
+/*  Navbar styles */
+.navbar {
+  display: flex;
+  background-color: #246076;
+  /* Dark blue navbar */
+  min-height: 80px;
+  max-height: auto;
+  overflow-y: hidden;
+  margin-top: 23px;
+}
+
+.navbar-logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  /* White navbar logo text */
+}
+
+.navbar-logo img {
+  width: 42px;
+  height: 38px;
+  margin-right: 12px;
+  border-radius: 19px;
+}
+
+.navbar-menu {
+  border-radius: 3px;
+  float: right;
+  margin: 0;
+  background-color: #246076;
+}
+
+.navbar-menu li {
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.navbar-menu li a {
+  padding: 6px;
+  text-decoration: none;
+  float: left;
+  font-size: 18px;
+  color: #fff;
+  /* White navbar links */
+}
+
+.navbar-menu li:hover {
+  background-color: #4495cb;
+  /* Light blue on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #000;
+}
+
+.hero-container {
+  /* background-image: url('/images/Hero_Section.png'); */
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  min-width: 50%;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.hero1,
+.hero2 {
+  min-width: 50%;
+  max-width: 100%;
+}
+
+.hero1 img,
+.hero2 img {
+  width: 100%;
+}
+
+
+.categories {
+  background-color: #246076;
+  padding: 0px 0px;
+  width: 100%;
+  height: 550px;
+  overflow-x: hidden;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.categories .recipecontainer {
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  white-space: nowrap;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 40px;
+}
+
+.recipecontainer::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  text-align: left;
+  color: rgb(240, 236, 226);
+  margin-top: 40px;
+  margin-left: 55px;
+}
+
+.category {
+  width: 300px;
+  height: 280px;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #a9d3e2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border-radius: 12px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.category:hover {
+  background-color: #e1e6e8;
+  transform: translateY(-8px);
+}
+
+.category a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.category a:hover {
+  background-color: #246076;
+  color: white;
+}
+
+.category img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: rgb(73, 62, 62);
+  color: #e2caca;
+  padding: 20px;
+}
+
+.contacts,
+.about {
+  width: 50%;
+  float: left;
+}
+
+.contacts h3,
+.about h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgb(73, 62, 62);
+}
+
+.contacts li {
+  margin-bottom: 5px;
+}
+
+.about p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .contacts,
+  .about {
+    width: 100%;
+    float: none;
+  }
+}

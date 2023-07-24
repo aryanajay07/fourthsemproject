@@ -1,0 +1,260 @@
+body,
+nav,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* background-color: #246076; */
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 10px;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 23px;
+}
+
+
+.navbar {
+    max-width: 100%;
+    display: flex;
+    min-height: 43px;
+    overflow-y: hidden;
+    padding: 12px;
+    margin-right: 0;
+    min-height: 50px;
+    max-height: 100%;
+    background-color: #246076;
+}
+
+.navbar-logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-logo img {
+    width: 42px;
+    width: 38px;
+    margin-right: 12px;
+    border-radius: 17px;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    float: right;
+    margin: 0;
+}
+
+.navbar-menu li {
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 20px;
+    justify-content: space-around;
+    /* margin: 3px ; */
+    /* background-color: #f7efef; */
+    padding: 10px;
+}
+
+.navbar-menu li a {
+    padding: 6px;
+    text-decoration: none;
+    float: left;
+    font-size: 18px;
+    color: rgb(246, 246, 250);
+}
+
+.navbar-menu li :hover {
+    background-color: #e9d5d5;
+    /* transform: translateY(-2px); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: #000;
+}
+
+.search-container {
+    display: flex;
+    float: right;
+    overflow: hidden;
+
+}
+
+p strong {
+    text-align: center;
+    margin-left: 33px;
+    color: rgb(180, 226, 180);
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    background-color: #246076;
+    border-radius: 12px;
+    border-collapse: collapse;
+}
+
+.search-container input::placeholder {
+    color: aliceblue;
+}
+
+.search-container input:hover::placeholder {
+    color: rgb(12, 13, 13);
+}
+
+.search-container input:hover {
+    background-color: #a5b5c0;
+    color: #000;
+}
+
+.search-container button {
+    background-color: rgb(230, 113, 67);
+    height: 26px;
+    color: rgb(236, 172, 172);
+    border-collapse: collapse;
+    border-radius: 12px;
+    border-width: 0cap;
+    width: 65px;
+    margin-top: 12px;
+    height: 36px;
+}
+
+.search-container button:hover {
+    background-color: rgb(232, 11, 11);
+    color: white;
+    transition: 0.3s ease-in;
+    transform: translateY(-3px);
+}
+
+main h1 {
+    margin: 23px;
+    color: #090909;
+    text-align: start;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 23px;
+    background-color: #fff;
+
+}
+
+.categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.categories-list li {
+    max-width: 90%;
+    min-width: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 17px;
+}
+
+.categories-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+}
+
+.categories-list li:hover {
+    /* background-color: #a1c0ec; */
+    background-color: #f2f2f2;
+    /* Use a lighter shade for the hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+table {
+    padding: 12px;
+    margin: 23px;
+    border-collapse: collapse;
+}
+
+th,
+td,
+tr {
+    padding: 8px;
+    text-align: left;
+    border: 2px solid #070707;
+    width: 300px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf2ff;
+}
+
+
+footer {
+    background-color: rgb(73, 62, 62);
+    color: rgb(226, 202, 202);
+    padding: 20px;
+}
+
+.contacts,
+.about {
+    width: 50%;
+    float: left;
+}
+
+.contacts h3,
+.about h3 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(73, 62, 62);
+
+}
+
+.contacts li {
+    margin-bottom: 5px;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .contacts,
+    .about {
+        width: 100%;
+        float: none;
+    }
+}

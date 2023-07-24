@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Food Recipe Website</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="/" class="navbar-logo">
+            <img src="/images/AA.png" alt="imgx" />NepaliRecipes</a>
+          <ul class="navbar-menu">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Log In</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero1"><img src="images/bg1.png" alt=""></div>
+          <div class="hero2"><img src="images/bg2.png" alt=""></div>
+        </div>
+      </section>
+    </header>
+      
+      <h2>Featured Recipes</h2>
+
+    <section class="categories">
+      <div class="recipecontainer">
+        {{#each data}}
+          <div class="category">
+            <img src="/images/{{ImageName}}" alt="recipeImage" />
+            <h3>{{FoodName}}</h3>
+            <a href="/recipes/{{FoodName}}">Click to View</a>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+   
+    <footer>
+  <div class="contacts" id="contacts">
+    <h3>Contacts</h3>
+    <ul>
+      <li>Email: AArecipeCorner@gmail.com</li>
+      <li>Phone: 9807757773</li>
+      <li>Address: Ncit,Balumar,Lalitpur</li>
+    </ul>
+  </div>
+  <div class="about" id="about">
+  <h3>About Us</h3>
+  <p>Welcome to our recipe viewing website! We are passionate about cooking and sharing delicious recipes from around the world.</p>
+  <p>Our mission is to inspire home cooks and food enthusiasts to explore new flavors, try exciting recipes, and create memorable culinary experiences.</p>
+  <p>On our platform, you'll find a diverse collection of recipes ranging from traditional classics to innovative creations. Whether you're a beginner or an experienced chef, we have recipes to suit every skill level and taste preference.</p>
+  <p>We believe that cooking is an art form that brings people together. It's not just about the end result; it's about the joy of the cooking process, the aromas that fill the kitchen, and the satisfaction of sharing a delicious meal with loved ones.</p>
+  <p>Join our community of food lovers, explore our recipe database, and embark on a culinary journey with us. Get ready to discover new flavors, enhance your cooking skills, and create extraordinary meals that will delight your senses.</p>
+  <p>Happy cooking!</p>
+</div>
+        <p>&copy; 2023 NepaliRecipes. All rights reserved.</p>
+
+</footer>
+  </body>
+</html>

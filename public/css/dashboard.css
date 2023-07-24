@@ -1,0 +1,291 @@
+/* Reset styles for common elements */
+body,
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  background-color: #246076;
+  overflow-x: hidden;
+}
+
+/* Main container styles */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  justify-content: center;
+  position: relative;
+}
+
+/* Header styles */
+header {
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  background-color: #246076;
+  min-height: 43px;
+  overflow-y: hidden;
+}
+
+.navbar-logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(132, 243, 28);
+}
+
+.navbar-logo img {
+  width: 42px;
+  height: 38px;
+  margin-right: 12px;
+  border-radius: 21px;
+}
+
+.navbar-menu {
+  border-radius: 3px;
+  float: right;
+  margin: 0;
+}
+
+.navbar-menu li {
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.navbar-menu li a {
+  padding: 6px;
+  text-decoration: none;
+  float: left;
+  font-size: 18px;
+  color: rgb(246, 246, 250);
+}
+
+.navbar-menu li :hover {
+  background-color: #e9d5d5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #000;
+}
+
+.search-container {
+  display: flex;
+  float: right;
+  overflow: hidden;
+
+}
+
+p strong {
+  text-align: center;
+  margin-left: 33px;
+  color: rgb(180, 226, 180);
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  background-color: #246076;
+  border-radius: 12px;
+  border-collapse: collapse;
+}
+
+.search-container input::placeholder {
+  color: aliceblue;
+}
+
+.search-container input:hover::placeholder {
+  color: rgb(12, 13, 13);
+}
+
+.search-container input:hover {
+  background-color: #a5b5c0;
+  color: #000;
+}
+
+.search-container button {
+  background-color: rgb(230, 113, 67);
+  height: 26px;
+  color: rgb(236, 172, 172);
+  border-collapse: collapse;
+  border-radius: 12px;
+  border-width: 0cap;
+  width: 65px;
+  margin-top: 12px;
+  height: 36px;
+}
+
+.search-container button:hover {
+  background-color: rgb(232, 11, 11);
+  color: white;
+  transition: 0.3s ease-in;
+  transform: translateY(-3px);
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  float: left;
+}
+
+/* Categories list styles */
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.categories-list li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.categories-list li a {
+  text-decoration: none;
+}
+
+.categories-list li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Categories section styles */
+.categories {
+  background-color: #246076;
+  padding: 0px 0px;
+  width: 100%;
+  height: 500px;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.categories .recipeContainer {
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  white-space: nowrap;
+  display: flex;
+  overflow-x: auto;
+  margin: 40px;
+}
+
+.recipeContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: goldenrod;
+}
+
+.category {
+  width: 300px;
+  height: 280px;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #a9d3e2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border-radius: 12px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.category:hover {
+  background-color: #e1e6e8;
+  transform: translateY(-8px);
+}
+
+.category a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.category a:hover {
+  background-color: #246076;
+  color: white;
+}
+
+.category img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgb(73, 62, 62);
+  color: rgb(226, 202, 202);
+  padding: 20px;
+}
+
+.contacts,
+.about {
+  width: 50%;
+  float: left;
+}
+
+.contacts h3,
+.about h3 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgb(73, 62, 62);
+}
+
+.contacts li {
+  margin-bottom: 5px;
+}
+
+.about p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .contacts,
+  .about {
+    width: 100%;
+    float: none;
+  }
+}

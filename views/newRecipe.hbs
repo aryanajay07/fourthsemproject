@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="/css/newRecipe.css">
+</head>
+<body>
+  <header>
+     <nav class="navbar">
+        <div class="container">
+          <a href="/" class="navbar-logo">
+            <img src="/images/AA.png" alt="imgx" />Food Recipes</a>
+          <ul class="navbar-menu">
+            <li><a href="/">Home</a></li>
+             <li><a href="/logout">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <h1>Add Recipe</h1>
+  <form action="/addrecipes" method="POST"  enctype="multipart/form-data">
+    <div>
+      <label for="type">Type:</label>
+      <input type="text" id="type" name="type" required>
+    </div>
+    <div>
+      <label for="foodName">Food Name:</label>
+      <input type="text" id="foodName" name="foodName" required>
+    </div>
+    <div>
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" required></textarea>
+    </div>
+    <div>
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" required></textarea>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+     <label for="foodimage">Image:</label>
+    <input type="file" name="image" accept="image/*" required>
+    <div>
+      <input type="submit" value="Add Recipe">
+    </div>
+  </form>
+
+      <footer>
+  <div class="contacts" id="contacts">
+    <h3>Contacts</h3>
+    <ul>
+      <li>Email: AArecipeCorner@gmail.com</li>
+      <li>Phone: 9807757773</li>
+      <li>Address: Ncit,Balumar,Lalitpur</li>
+    </ul>
+  </div>
+  <div class="about" id="about">
+  <h3>About Us</h3>
+  <p>Welcome to our recipe viewing website! We are passionate about cooking and sharing delicious recipes from around the world.</p>
+  <p>Our mission is to inspire home cooks and food enthusiasts to explore new flavors, try exciting recipes, and create memorable culinary experiences.</p>
+  <p>On our platform, you'll find a diverse collection of recipes ranging from traditional classics to innovative creations. Whether you're a beginner or an experienced chef, we have recipes to suit every skill level and taste preference.</p>
+  <p>We believe that cooking is an art form that brings people together. It's not just about the end result; it's about the joy of the cooking process, the aromas that fill the kitchen, and the satisfaction of sharing a delicious meal with loved ones.</p>
+  <p>Join our community of food lovers, explore our recipe database, and embark on a culinary journey with us. Get ready to discover new flavors, enhance your cooking skills, and create extraordinary meals that will delight your senses.</p>
+  <p>Happy cooking!</p>
+</div>
+        <p>&copy; 2023 Food Recipes. All rights reserved.</p>
+
+</footer>
+</body>
+</html>

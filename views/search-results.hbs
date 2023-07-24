@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/search-results.css">
+    <title>Search-Results</title>
+</head>
+<body>
+     <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="/" class="navbar-logo">
+            <img src="images/AA.png" alt="imgx" />Food Recipes</a>
+          <ul class="navbar-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="/logout">Log Out</a></li>
+          </ul>
+        </div>
+        <div class="search-container">
+      <form action="/search" method="GET">
+    <input type="text" placeholder="Search" id="searchQuery" name="query" required>
+    <button type="submit">Search</button>
+    </div>
+      </nav>  
+    </header> 
+<main class="container">
+    <h1>Search Results for "{{query}}"</h1>
+    {{#if results.length}}
+      <ul class="recipe-list">
+        {{#each results}}
+          <li class="recipe-item">
+            <div class="recipe-thumbnail">
+                <img src="images/{{ImageName}}" alt="{{ImageName}}">
+            </div>
+            <div class="recipe-details">
+              <h3><a href="/recipes/{{FoodName}}">{{FoodName}}</a></h3>
+              <p>{{Description}}</p>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p class="no-results">No results found for "{{query}}"</p>
+    {{/if}}
+  </main>
+
+       <footer>
+  <div class="contacts" id="contacts">
+    <h3>Contacts</h3>
+    <ul>
+      <li>Email: AArecipeCorner@gmail.com</li>
+      <li>Phone: 9807757773</li>
+      <li>Address: Ncit,Balumar,Lalitpur</li>
+    </ul>
+  </div>
+  <div class="about" id="about">
+  <h3>About Us</h3>
+  <p>Welcome to our recipe viewing website! We are passionate about cooking and sharing delicious recipes from around the world.</p>
+  <p>Our mission is to inspire home cooks and food enthusiasts to explore new flavors, try exciting recipes, and create memorable culinary experiences.</p>
+  <p>On our platform, you'll find a diverse collection of recipes ranging from traditional classics to innovative creations. Whether you're a beginner or an experienced chef, we have recipes to suit every skill level and taste preference.</p>
+  <p>We believe that cooking is an art form that brings people together. It's not just about the end result; it's about the joy of the cooking process, the aromas that fill the kitchen, and the satisfaction of sharing a delicious meal with loved ones.</p>
+  <p>Join our community of food lovers, explore our recipe database, and embark on a culinary journey with us. Get ready to discover new flavors, enhance your cooking skills, and create extraordinary meals that will delight your senses.</p>
+  <p>Happy cooking!</p>
+</div>
+        <p>&copy; 2023 Food Recipes. All rights reserved.</p>
+
+</footer>
+</body>
+</html>
